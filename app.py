@@ -28,9 +28,9 @@ with st.sidebar:
     st.title("Nexus Alpha")
     st.markdown("### Proprietary Research")
     st.markdown("---")
-    st.markdown("**Analyst:** [Your Name]") 
+    st.markdown("**Analysts:** Aditya Pandey; Ved Krishnagiri") 
     st.markdown("**Institution:** Warwick Business School")
-    st.markdown("**Focus:** Equity Research & M&A")
+    st.markdown("**Focus:** Equity Research")
     st.markdown("---")
     
     # Macro Navigation: Macro Terminal removed
@@ -40,7 +40,7 @@ with st.sidebar:
 
 if page == "Home":
     st.title("Welcome to Nexus Alpha Research")
-    st.markdown("### Institutional-Grade Analysis at the Intersection of Tech, Energy, and Macro.")
+    st.markdown("### Institutional-Grade Analysis on Energy and AI infrastructure markets.")
     st.markdown("---")
     st.markdown("""
     Welcome to my proprietary research portal. I built this platform from scratch in Python to host my financial models and equity research. 
