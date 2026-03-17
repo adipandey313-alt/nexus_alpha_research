@@ -1,6 +1,6 @@
 import streamlit as st
 
-# 1. Page Configuration (Icons Removed)
+# 1. Page Configuration
 st.set_page_config(
     page_title="Nexus Alpha Research",
     layout="wide",
@@ -28,13 +28,13 @@ with st.sidebar:
     st.title("Nexus Alpha")
     st.markdown("### Proprietary Research")
     st.markdown("---")
-    st.markdown("**Analyst:** [Your Name]") # Update this!
+    st.markdown("**Analyst:** [Your Name]") 
     st.markdown("**Institution:** Warwick Business School")
     st.markdown("**Focus:** Equity Research & M&A")
     st.markdown("---")
     
-    # Macro Navigation: Switch between companies here
-    page = st.radio("Coverage Universe", ["Home", "Constellation Energy (CEG)", "Macro Terminal"])
+    # Macro Navigation: Macro Terminal removed
+    page = st.radio("Coverage Universe", ["Home", "Constellation Energy (CEG)"])
 
 # 4. Page Routing & Micro Navigation (Tabs)
 
@@ -43,7 +43,7 @@ if page == "Home":
     st.markdown("### Institutional-Grade Analysis at the Intersection of Tech, Energy, and Macro.")
     st.markdown("---")
     st.markdown("""
-    Welcome to my proprietary research portal. I built this platform from scratch in Python to host my financial models, equity research, and macro analytics. 
+    Welcome to my proprietary research portal. I built this platform from scratch in Python to host my financial models and equity research. 
     
     **Coverage Universe:**
     * **Constellation Energy (US: CEG):** Initiation of Coverage focusing on the AI-Energy Nexus.
@@ -57,31 +57,21 @@ elif page == "Constellation Energy (CEG)":
     st.markdown("### Initiation of Coverage: The AI-Energy Nexus")
     st.markdown("---")
     
-    # Micro Navigation: 4 Horizontal Tabs for the Company (Icons Removed)
-    tab1, tab2, tab3, tab4 = st.tabs([
-        "Investment Report", 
+    # Micro Navigation: 3 Horizontal Tabs
+    tab1, tab2, tab3 = st.tabs([
+        "Investment Reports", 
         "Financial Models", 
-        "Valuation Scenarios", 
-        "Risks & Catalysts"
+        "Two-Pager"
     ])
     
     with tab1:
-        st.subheader("Executive Summary")
-        st.write("This tab will host the text and narrative of your 15-page initiation report. We can break it down into Investment Thesis, Industry Overview, etc.")
+        st.subheader("Investment Reports")
+        st.write("This section will host your comprehensive 15-page initiation report, covering the investment thesis, industry overview, and margin expansion scenarios.")
         
     with tab2:
-        st.subheader("3-Statement Model & DCF")
-        st.write("This tab will host your interactive data tables. We will use Pandas to display your historicals, projections, and terminal value calculations cleanly.")
+        st.subheader("Financial Models")
+        st.write("This section will host your 3-statement model and DCF valuation. We will use Pandas to render institutional-grade data tables.")
         
     with tab3:
-        st.subheader("Margin Expansion & BTM Economics")
-        st.write("This tab will host interactive charts. We can plot the margin expansion scenarios driven by the Calpine natural gas acquisition here.")
-        
-    with tab4:
-        st.subheader("FERC Transmission & Regulatory Risks")
-        st.write("This tab will cover stress-testing of BTM data center economics and regulatory hurdles.")
-
-elif page == "Macro Terminal":
-    st.title("Macro & Markets Terminal")
-    st.markdown("---")
-    st.write("Global liquidity and API-driven dashboards will go here.")
+        st.subheader("Two-Pager")
+        st.write("This section will host the condensed tear sheet summarizing the core thesis, valuation matrix, and critical catalysts.")
