@@ -40,16 +40,21 @@ with st.sidebar:
 
 if page == "Home":
     st.title("Welcome to Nexus Alpha Research")
-    st.markdown("### Institutional-Grade Analysis on Energy and AI infrastructure markets.")
+    st.markdown("### Institutional-Grade Analysis on Energy and AI Infrastructure Markets.")
     st.markdown("---")
+    
     st.markdown("""
-    Welcome to my proprietary research portal. I built this platform from scratch in Python to host my financial models and equity research. 
+    Nexus Alpha Research is an independent equity research terminal developed by Aditya Pandey and Ved Krishnagiri. 
+    
+    As Finance undergraduates at Warwick Business School, we recognized that static reports are no longer sufficient for modern market analysis. We engineered this platform from the ground up in Python to host our live financial models, dynamic valuation frameworks, and proprietary investment theses.
+    
+    This portal serves as a transparent, continuously updated ledger of our research. It bridges the gap between traditional fundamental analysis and programmatic data visualization, allowing us to build a verifiable, long-term track record in public markets.
     
     **Coverage Universe:**
-    * **Constellation Energy (US: CEG):** Initiation of Coverage focusing on the AI-Energy Nexus.
-    * *(More coverage initiating soon...)*
+    * **Constellation Energy (US: CEG):** Initiation of Coverage focusing on the AI-Energy Nexus, BTM data center economics, and margin expansion.
+    * *(Further coverage initiating soon...)*
     
-    *Use the sidebar to select a company and view the interactive reports and financial models.*
+    *Use the sidebar to navigate the platform and view our interactive reports and financial models.*
     """)
 
 elif page == "Constellation Energy (CEG)":
