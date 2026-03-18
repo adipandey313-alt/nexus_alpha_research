@@ -16,13 +16,13 @@ st.markdown("""
     /* Global Typography: Muted grey for paragraphs to reduce eye strain */
     p, li, span { font-family: 'Helvetica Neue', sans-serif; color: #D1D5DB !important; font-size: 15px; line-height: 1.6; }
     
-    /* Main Title (H1): Bold, white, with a full-width subtle underline */
-    h1 { font-family: 'Helvetica Neue', sans-serif; font-weight: 600; font-size: 2.2rem; border-bottom: 1px solid #333; padding-bottom: 0.5rem; margin-bottom: 1rem; color: #FAFAFA !important;}
+    /* Main Title (H1): Restored original Streamlit size, kept subtle underline */
+    h1 { font-family: 'Helvetica Neue', sans-serif; font-weight: 600; border-bottom: 1px solid #333; padding-bottom: 0.5rem; margin-bottom: 1rem; color: #FAFAFA !important;}
     
-    /* Sub-title (H2): Slightly smaller, muted, no underline */
-    h2 { font-family: 'Helvetica Neue', sans-serif; font-weight: 400; font-size: 1.5rem; color: #A0AEC0 !important; margin-bottom: 2rem;}
+    /* Sub-title (H2): Muted, no underline */
+    h2 { font-family: 'Helvetica Neue', sans-serif; font-weight: 400; color: #A0AEC0 !important; margin-bottom: 2rem;}
     
-    /* Section Headers (H3): Uppercase, wide spacing, terminal-green underline */
+    /* Section Headers (H3): Uppercase, wide spacing, terminal-green underline pulled tighter to text */
     h3 { 
         font-family: 'Helvetica Neue', sans-serif; 
         font-weight: 600; 
@@ -30,10 +30,11 @@ st.markdown("""
         text-transform: uppercase; 
         letter-spacing: 1.5px; 
         border-bottom: 2px solid #00E676; 
-        padding-bottom: 5px; 
+        padding-bottom: 2px; /* Tightened from 5px to 2px */
         color: #FAFAFA !important; 
         display: inline-block; 
         margin-bottom: 1rem;
+        line-height: 1.2;
     }
     
     .block-container { padding-top: 2rem; padding-bottom: 2rem; }
