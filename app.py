@@ -48,7 +48,12 @@ if page == "Home":
     
     As Finance undergraduates at Warwick Business School, we recognized that static reports are no longer sufficient for modern market analysis. We engineered this platform from the ground up in Python to host our live financial models, dynamic valuation frameworks, and proprietary investment theses.
     
-    This portal serves as a transparent, continuously updated ledger of our research. It bridges the gap between traditional fundamental analysis and programmatic data visualization, allowing us to build a verifiable, long-term track record in public markets.
+    This portal serves as a transparent, continuously updated ledger of our research. It bridges the gap between traditional fundamental analysis and programmatic data visualization, allowing us to build a verifiable track record in public markets.
+    
+    **Our Sector Mandate**
+    We deliberately concentrate our coverage on Energy and AI Infrastructure, viewing them as the twin pillars driving the next decade of capital allocation:
+    * **Energy & Macroeconomics:** Energy markets serve as the ultimate barometer for global macroeconomic cycles and geopolitical friction. We focus on this space to leverage our top-down analytical framework, mapping complex geopolitical catalysts directly to fundamental equity valuations.
+    * **AI Infrastructure:** The physical build-out of artificial intelligence represents the most consequential secular growth trend of our generation. We analyze the backbone of this shift—focusing on data centers, power generation, and supply chain capital expenditures—to identify structural mispricings.
     
     **Coverage Universe:**
     * **Constellation Energy (US: CEG):** Initiation of Coverage focusing on the AI-Energy Nexus, BTM data center economics, and margin expansion.
