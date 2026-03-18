@@ -7,34 +7,42 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# 2. Institutional Dark Mode CSS with Typography Hierarchy
+# 2. Institutional Dark Mode CSS with Forced Typography Override
 st.markdown("""
     <style>
     .stApp { background-color: #0E1117; }
     [data-testid="stSidebar"] { background-color: #1E2127; }
     
-    /* Global Typography: Muted grey for paragraphs to reduce eye strain */
+    /* Global Typography */
     p, li, span { font-family: 'Helvetica Neue', sans-serif; color: #D1D5DB !important; font-size: 15px; line-height: 1.6; }
     
-    /* Main Title (H1): Restored original Streamlit size, kept subtle underline */
-    h1 { font-family: 'Helvetica Neue', sans-serif; font-weight: 600; border-bottom: 1px solid #333; padding-bottom: 0.5rem; margin-bottom: 1rem; color: #FAFAFA !important;}
+    /* Main Title (H1): Forced large size */
+    h1 { 
+        font-family: 'Helvetica Neue', sans-serif !important; 
+        font-size: 2.75rem !important; 
+        font-weight: 600 !important; 
+        border-bottom: 1px solid #333 !important; 
+        padding-bottom: 0.5rem !important; 
+        margin-bottom: 1rem !important; 
+        color: #FAFAFA !important;
+    }
     
-    /* Sub-title (H2): Muted, no underline */
-    h2 { font-family: 'Helvetica Neue', sans-serif; font-weight: 400; color: #A0AEC0 !important; margin-bottom: 2rem;}
+    /* Sub-title (H2) */
+    h2 { font-family: 'Helvetica Neue', sans-serif !important; font-weight: 400 !important; color: #A0AEC0 !important; margin-bottom: 2rem !important; font-size: 1.5rem !important;}
     
-    /* Section Headers (H3): Uppercase, wide spacing, terminal-green underline pulled tighter to text */
+    /* Section Headers (H3): Swapped to text-decoration for a mathematically tight underline */
     h3 { 
-        font-family: 'Helvetica Neue', sans-serif; 
-        font-weight: 600; 
-        font-size: 1.05rem; 
-        text-transform: uppercase; 
-        letter-spacing: 1.5px; 
-        border-bottom: 2px solid #00E676; 
-        padding-bottom: 2px; /* Tightened from 5px to 2px */
+        font-family: 'Helvetica Neue', sans-serif !important; 
+        font-weight: 600 !important; 
+        font-size: 1.05rem !important; 
+        text-transform: uppercase !important; 
+        letter-spacing: 1.5px !important; 
         color: #FAFAFA !important; 
-        display: inline-block; 
-        margin-bottom: 1rem;
-        line-height: 1.2;
+        margin-bottom: 1.5rem !important;
+        text-decoration: underline !important;
+        text-decoration-color: #00E676 !important;
+        text-decoration-thickness: 2px !important;
+        text-underline-offset: 4px !important; 
     }
     
     .block-container { padding-top: 2rem; padding-bottom: 2rem; }
@@ -45,8 +53,8 @@ st.markdown("""
     
     /* Tab Styling */
     .stTabs [data-baseweb="tab-list"] { gap: 24px; }
-    .stTabs [data-baseweb="tab"] { height: 50px; white-space: pre-wrap; background-color: transparent; border-radius: 4px; color: #FAFAFA; font-size: 16px; font-weight: 400;}
-    .stTabs [aria-selected="true"] { border-bottom: 2px solid #00E676; color: #00E676 !important; }
+    .stTabs [data-baseweb="tab"] { height: 50px; white-space: pre-wrap; background-color: transparent; border-radius: 4px; color: #FAFAFA !important; font-size: 16px; font-weight: 400;}
+    .stTabs [aria-selected="true"] { border-bottom: 2px solid #00E676 !important; color: #00E676 !important; }
     </style>
 """, unsafe_allow_html=True)
 
